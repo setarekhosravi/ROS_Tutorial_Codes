@@ -15,7 +15,7 @@ class MyNode(Node):
 def main(args= None):
     rclpy.init(args=args)
     node = MyNode()
-    rclpy.spin(node) # spin node means keep node alive until you press CTRL+C and kill it
+    rclpy.spin(node) # spin node means keep node alive until you press CTRL+C and kill it, enable all callbacks
     rclpy.shutdown()
 
 if __name__ == '__main__':
