@@ -1,0 +1,33 @@
+[0.425s] Invoking command in '/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build
+[0.587s] running develop
+[0.588s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:158: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[0.588s]   warnings.warn(
+[0.687s] Removing /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my-robot-controller.egg-link (link to .)
+[0.707s] Invoked command in '/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --uninstall --editable --build-directory /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build
+[0.709s] Invoking command in '/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/src/my_robot_controller': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build install --record /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data --force
+[0.860s] running egg_info
+[0.861s] writing ../../build/my_robot_controller/my_robot_controller.egg-info/PKG-INFO
+[0.861s] writing dependency_links to ../../build/my_robot_controller/my_robot_controller.egg-info/dependency_links.txt
+[0.861s] writing entry points to ../../build/my_robot_controller/my_robot_controller.egg-info/entry_points.txt
+[0.861s] writing requirements to ../../build/my_robot_controller/my_robot_controller.egg-info/requires.txt
+[0.861s] writing top-level names to ../../build/my_robot_controller/my_robot_controller.egg-info/top_level.txt
+[0.862s] reading manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.863s] writing manifest file '../../build/my_robot_controller/my_robot_controller.egg-info/SOURCES.txt'
+[0.863s] running build
+[0.864s] running build_py
+[0.864s] running install
+[0.864s] running install_lib
+[0.864s] creating /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.864s] copying /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/my_first_node.py -> /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.864s] copying /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build/lib/my_robot_controller/__init__.py -> /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller
+[0.865s] byte-compiling /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/my_first_node.py to my_first_node.cpython-310.pyc
+[0.865s] byte-compiling /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller/__init__.py to __init__.cpython-310.pyc
+[0.865s] running install_data
+[0.865s] copying resource/my_robot_controller -> /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/share/ament_index/resource_index/packages
+[0.865s] copying package.xml -> /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/share/my_robot_controller
+[0.865s] running install_egg_info
+[0.866s] Copying ../../build/my_robot_controller/my_robot_controller.egg-info to /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages/my_robot_controller-0.0.0-py3.10.egg-info
+[0.867s] running install_scripts
+[0.881s] Installing test_node script to /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/my_robot_controller
+[0.881s] writing list of installed files to '/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/install.log'
+[0.898s] Invoked command in '/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/src/my_robot_controller' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/install/my_robot_controller/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/my_robot_controller build --build-base /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/build install --record /home/setare/Vision/Work/Tutorials/ROS2/ros2_ws/build/my_robot_controller/install.log --single-version-externally-managed install_data --force
