@@ -8,6 +8,8 @@ if __name__=="__main__":
 
     rospy.loginfo("This node has been started!")
 
-    rospy.sleep(1)
+    rate = rospy.Rate(10)
 
-    rospy.loginfo("Exit the node!")
+    while not rospy.is_shutdown():
+        rospy.loginfo("Hello")
+        rate.sleep()
