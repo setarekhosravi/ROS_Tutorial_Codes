@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/setup.sh

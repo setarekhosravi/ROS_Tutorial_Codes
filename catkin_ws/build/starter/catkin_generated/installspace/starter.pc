@@ -1,0 +1,8 @@
+prefix=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/install
+
+Name: starter
+Description: Description of starter
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
