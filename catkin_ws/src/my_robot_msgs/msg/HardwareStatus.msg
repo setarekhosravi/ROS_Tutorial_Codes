@@ -1,0 +1,3 @@
+int64 temprature
+bool are_motors_up
+string debug_message
