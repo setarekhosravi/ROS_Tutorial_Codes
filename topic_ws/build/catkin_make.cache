@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/devel -DCMAKE_INSTALL_PREFIX=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/install -G Unix Makefiles
