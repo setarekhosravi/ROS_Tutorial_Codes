@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/msg/HardwareStatus.js"
+  "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/gennodejs/ros/my_robot_msgs/srv/ComputeDiskArea.js"
   "CMakeFiles/my_robot_msgs_generate_messages_nodejs"
 )
 

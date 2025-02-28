@@ -54,7 +54,9 @@ CMAKE_BINARY_DIR = /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build
 include my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py.dir/progress.make
 
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
+my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
 my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py
+my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/__init__.py
 
 
 /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_HardwareStatus.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
@@ -62,14 +64,28 @@ my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py: /home/strh/Robotics
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG my_robot_msgs/HardwareStatus"
 	cd /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/msg/HardwareStatus.msg -Imy_robot_msgs:/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg
 
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py: /opt/ros/noetic/lib/genpy/gensrv_py.py
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python code from SRV my_robot_msgs/ComputeDiskArea"
+	cd /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv -Imy_robot_msgs:/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p my_robot_msgs -o /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv
+
 /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python msg __init__.py for my_robot_msgs"
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating Python msg __init__.py for my_robot_msgs"
 	cd /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg --initpy
+
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/__init__.py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
+/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/__init__.py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python srv __init__.py for my_robot_msgs"
+	cd /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/build/my_robot_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv --initpy
 
 my_robot_msgs_generate_messages_py: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py
 my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/_HardwareStatus.py
+my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/_ComputeDiskArea.py
 my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/msg/__init__.py
+my_robot_msgs_generate_messages_py: /home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/lib/python3/dist-packages/my_robot_msgs/srv/__init__.py
 my_robot_msgs_generate_messages_py: my_robot_msgs/CMakeFiles/my_robot_msgs_generate_messages_py.dir/build.make
 
 .PHONY : my_robot_msgs_generate_messages_py

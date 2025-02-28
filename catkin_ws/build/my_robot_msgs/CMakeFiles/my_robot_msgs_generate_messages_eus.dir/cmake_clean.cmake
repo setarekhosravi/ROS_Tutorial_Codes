@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/roseus/ros/my_robot_msgs/manifest.l"
   "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/roseus/ros/my_robot_msgs/msg/HardwareStatus.l"
+  "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/roseus/ros/my_robot_msgs/srv/ComputeDiskArea.l"
   "CMakeFiles/my_robot_msgs_generate_messages_eus"
 )
 
