@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/msg/HardwareStatus.lisp"
   "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/ComputeDiskArea.lisp"
+  "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/devel/share/common-lisp/ros/my_robot_msgs/srv/SetLed.lisp"
   "CMakeFiles/my_robot_msgs_generate_messages_lisp"
 )
 

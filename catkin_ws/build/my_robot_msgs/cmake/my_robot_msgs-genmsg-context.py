@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/msg/HardwareStatus.msg"
-services_str = "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv"
+services_str = "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv;/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/SetLed.srv"
 pkg_name = "my_robot_msgs"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

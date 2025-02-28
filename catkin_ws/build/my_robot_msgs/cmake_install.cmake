@@ -42,7 +42,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_msgs/srv" TYPE FILE FILES "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_robot_msgs/srv" TYPE FILE FILES
+    "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/ComputeDiskArea.srv"
+    "/home/strh/Robotics/ROS_Tutorial_Codes/catkin_ws/src/my_robot_msgs/srv/SetLed.srv"
+    )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
