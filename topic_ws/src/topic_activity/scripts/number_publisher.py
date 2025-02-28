@@ -10,11 +10,11 @@ if __name__=="__main__":
 
     publisher = rospy.Publisher("/number", Int64, queue_size=10)
 
-    rate = rospy.Rate(20)
+    rate = rospy.Rate(5)
 
     while not rospy.is_shutdown():
         msg = Int64()
-        msg.data = np.random.randint(1,20)
+        msg.data = np.random.randint(1,100)
         publisher.publish(msg)
         rate.sleep()
 
