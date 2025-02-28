@@ -131,6 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/gtest/cmake_install.cmake")
+  include("/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/topic_activity/cmake_install.cmake")
 
 endif()
 

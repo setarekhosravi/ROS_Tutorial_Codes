@@ -1,0 +1,8 @@
+prefix=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/devel
+
+Name: topic_activity
+Description: Description of topic_activity
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
