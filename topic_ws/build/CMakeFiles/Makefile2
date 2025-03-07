@@ -54,12 +54,14 @@ CMAKE_BINARY_DIR = /home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: topic_activity_bringup/all
 all: topic_activity/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: topic_activity_bringup/preinstall
 preinstall: topic_activity/preinstall
 
 .PHONY : preinstall
@@ -71,6 +73,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: topic_activity_bringup/clean
 clean: topic_activity/clean
 
 .PHONY : clean
@@ -168,6 +171,24 @@ topic_activity/clean: topic_activity/CMakeFiles/roscpp_generate_messages_lisp.di
 topic_activity/clean: topic_activity/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 .PHONY : topic_activity/clean
+
+#=============================================================================
+# Directory level rules for directory topic_activity_bringup
+
+# Recursive "all" directory target.
+topic_activity_bringup/all:
+
+.PHONY : topic_activity_bringup/all
+
+# Recursive "preinstall" directory target.
+topic_activity_bringup/preinstall:
+
+.PHONY : topic_activity_bringup/preinstall
+
+# Recursive "clean" directory target.
+topic_activity_bringup/clean: topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+.PHONY : topic_activity_bringup/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/doxygen.dir
@@ -412,6 +433,33 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 gtest/googletest/CMakeFiles/gtest.dir/clean:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/clean
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
+
+#=============================================================================
+# Target rules for target topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir
+
+# All Build rule for target.
+topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build.make topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build.make topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/all
+
+# Build rule for subdir invocation for target.
+topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/CMakeFiles 0
+.PHONY : topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+# Convenience name for target.
+_catkin_empty_exported_target: topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/rule
+
+.PHONY : _catkin_empty_exported_target
+
+# clean rule for target.
+topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/build.make topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : topic_activity_bringup/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 #=============================================================================
 # Target rules for target topic_activity/CMakeFiles/std_srvs_generate_messages_py.dir

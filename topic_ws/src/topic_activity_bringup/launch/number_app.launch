@@ -1,0 +1,6 @@
+<launch>
+    <param name="/number_publisher_frequency" type="double" value="3.0" />
+
+    <node name="number_publisher" pkg="topic_activity" type="number_publisher.py" />
+    <node name="number_counter" pkg="topic_activity" type="number_counter.py" />
+</launch>

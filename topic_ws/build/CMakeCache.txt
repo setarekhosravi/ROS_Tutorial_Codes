@@ -485,6 +485,12 @@ topic_activity_BINARY_DIR:STATIC=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws
 //Value Computed by CMake
 topic_activity_SOURCE_DIR:STATIC=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/src/topic_activity
 
+//Value Computed by CMake
+topic_activity_bringup_BINARY_DIR:STATIC=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/build/topic_activity_bringup
+
+//Value Computed by CMake
+topic_activity_bringup_SOURCE_DIR:STATIC=/home/strh/Robotics/ROS_Tutorial_Codes/topic_ws/src/topic_activity_bringup
+
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
 
@@ -636,7 +642,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
