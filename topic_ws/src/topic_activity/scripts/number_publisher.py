@@ -9,8 +9,8 @@ if __name__=="__main__":
     rospy.init_node("number_publisher")
 
     publisher = rospy.Publisher("/number", Int64, queue_size=10)
-
-    rate = rospy.Rate(5)
+    publish_frequency = rospy.get_param("/number_publisher_frequency")
+    rate = rospy.Rate(publish_frequency)
 
     while not rospy.is_shutdown():
         msg = Int64()
