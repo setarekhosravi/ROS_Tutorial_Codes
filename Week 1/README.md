@@ -1,4 +1,4 @@
-# Linux Tutorial Repository
+# Linux Tutorial Repository: Week 1
 
 ## Overview
 This repository contains a collection of essential Linux commands, categorized for ease of learning and reference. Whether you're a beginner or an advanced user, this guide will help you understand and utilize Linux effectively.
