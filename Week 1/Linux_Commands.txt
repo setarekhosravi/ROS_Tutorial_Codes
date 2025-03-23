@@ -1,0 +1,166 @@
+>> readlink /bin/sh
+OUTPUT: dash
+######################################################
+>> echo $SHELL
+OUTPUT: /bin/bash
+######################################################
+>> uname
+OUTPUT: Linux
+######################################################
+>> uname --help
+>> uname -a
+OUTPUT: Linux setare-ASUS-TUF-Gaming-F15-FX507VV4-FX507VV 6.8.0-52-generic #53~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Wed Jan 15 19:18:46 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+######################################################
+>> echo Hello World
+OUTPUT: Hello World
+######################################################
+>> echo "Hello World"
+######################################################
+>> ls
+OUTPUT: AnyDesk  Linux_Commands.txt
+######################################################
+>> pwd
+OUTPUT: /home/setare/Documents
+######################################################
+>> mkdir
+USAGE: creating new directory
+######################################################
+######################################################
+###########INTERNAL and EXTERNAL Commands#############
+######################################################
+######################################################
+>> type echo
+OUTPUT: echo is a shell builtin
+######################################################
+>> type uname
+OUTPUT: uname is /usr/bin/uname
+! It is an external command.
+######################################################
+>> /usr/bin/uname -r
+OUTPUUT: 6.8.0-52-generic
+######################################################
+>> bash --version 
+OUTPUT: GNU bash, version 5.1.16(1)-release (x86_64-pc-linux-gnu)
+Copyright (C) 2020 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+This is free software; you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+######################################################
+>> echo $BASH_VERSION
+OUTPUT: 5.1.16(1)-release
+######################################################
+>> echo $HISTFILE
+OUTPUT: /home/setare/.bash_history
+######################################################
+>> cat /home/setare/.bash_history
+! shows file content in terminal.
+like this:
+>> history
+######################################################
+>> echo $HISTSIZE
+OUTPUT: 1000
+! how many records stored in history file.
+######################################################
+>> echo $HOME
+OUTPUT: /home/setare
+######################################################
+>> echo $PS1
+OUTPUT: (Tracking) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$
+! it means: setare@setare-ASUS-TUF-Gaming-F15-FX507VV4-FX507VV
+######################################################
+>> echo $PWD
+OUTPUT: /home/setare/Documents
+>> pwd
+OUTPUT: /home/setare/Documents
+######################################################
+>> echo $SHLVL
+OUTPUT: 1
+######################################################
+>> echo $PATH
+OUTPUT: /opt/ros/humble/bin:/home/setare/anaconda3/envs/Tracking/bin:/home/setare/anaconda3/condabin:/usr/local/cuda-12.1/bin:/usr/local/bin:/home/setare/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+######################################################
+! You can see all the variables using "export" command
+######################################################
+! You can see all the variables using "env" command
+######################################################
+>> age=2
+>> echo $age
+OUTPUT: 2
+######################################################
+>> echo "import torch" > torch.py
+>> ls
+OUTPUT: AnyDesk  Linux_Commands.txt  torch.py
+>> cat torch.py 
+OUTPUT: import torch
+######################################################
+######################################################
+####################SUBSHELL##########################
+######################################################
+######################################################
+>> bash
+>> echo $SHLVL
+OUTPUT: 2
+>> exit
+OUTPUT: exit
+>> echo $SHLVL
+OUTPUT: 1
+######################################################
+>> export name="Ali"
+>> bash
+>> echo name
+OUTPUT: name
+######################################################
+>> unset name
+! delete variable called "name"
+######################################################
+! how to check all the description of commands?
+! using:
+>> man echo
+>> man -k echo (search commands)
+! by the commands above you can read their manual
+######################################################
+>> man -S 5 passwd
+######################################################
+>> man man
+! manual of "man" command
+######################################################
+! How to run last command?
+! by:
+>> !!
+! How to run  an specific command from history file:
+>> !144
+>> !Line_Number
+######################################################
+######################################################
+########################NANO##########################
+######################################################
+######################################################
+^ = Ctrl
+M = Alt
+######################################################
+! How to copy a file to current directory?
+! Example:
+>> cp /etc/passwd .
+######################################################
+######################################################
+#########################VIM##########################
+######################################################
+######################################################
+! different modes:
+>> Esc: go to normal mode
+>> i: go to insert mode and write
+! How to save? 
+! Go to normal mode by Esc
+! Enter : it means you want to write a command
+! Then enter w means write file
+! How to quit from vim?
+! By :q
+! Up: k, Down: j, Left: h, Right: l
+! Other sortcuts are in vim cheatsheet
+! SHIFT + a: go to end of the line and insert mode
+! In normal mode:
+! Copy: yy 
+! Paste: p
+! delete: dd
+! You can combine the commands
