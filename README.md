@@ -1,7 +1,3 @@
-Here's a structured README for your ROS1 tutorial repository:  
-
----
-
 # ROS1 Tutorial Repository  
 
 ## Overview  
