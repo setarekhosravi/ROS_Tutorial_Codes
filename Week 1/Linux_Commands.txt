@@ -164,3 +164,128 @@ M = Alt
 ! Paste: p
 ! delete: dd
 ! You can combine the commands
+>> press o in normal mode to insert a new line
+>> press shift + o to insert a new line above
+>> press yy in normal mode to copy a line
+>> press pp in normal mode to paste a line
+>> press y + w in normal mode to copy a word
+>> press y + e in normal mode to copy a word
+>> press u in normal mode to undo
+>> press ctrl + r in normal mode to redo
+>> press x in normal mode to delete a character
+>> press :!date in normal to see current date
+>> press :r!date in normal to see current date in editor
+>> press :x save and quit
+>> press :wq save and quit
+>> press :wq! force save and quit
+For learning vim you should use complete courses.
+######################################################
+######################################################
+########################Files#########################
+######################################################
+######################################################
+>> cat file1.txt file2.txt
+OUTPUT: concatinating content of file1.txt and file2.txt
+>> cat file1.txt file2.txt > file3.txt
+OUTPUT: concatinating content of file1.txt and file2.txt and save it in file3.txt
+>> cat file1.txt
+OUTPUT: content of file1.txt
+>> batcat file1.txt
+OUTPUT: content of file1.txt like ide format
+>> paste file1.txt file2.txt
+OUTPUT: concatinating content of file1.txt and file2.txt (column wise)
+>> od file1.txt
+OUTPUT: show content of file1.txt in octal format
+>> cat -n file1.txt
+OUTPUT: show content of file1.txt with line numbers
+>> sort -n file1.txt
+OUTPUT: sort content of file1.txt
+>> sort -nr file1.txt
+OUTPUT: sort content of file1.txt in reverse order
+>> nl file1.txt
+OUTPUT: show content of file1.txt with line numbers
+>> less file1.txt
+OUTPUT: show content of file1.txt
+>> head -n5 file1.txt
+OUTPUT: show first 5 lines of file1.txt
+>> tail -n5 file1.txt
+OUTPUT: show last 5 lines of file1.txt
+>> tail -f file1.txt
+OUTPUT: show last 5 lines of file1.txt and update it every second
+#####################################################
+####################Summarizeing#####################
+#####################################################
+>> wc file1.txt
+OUTPUT: show number of lines, words and characters in file1.txt
+>> cut -d',' -f1 file1.txt
+OUTPUT: show first column of file1.txt
+>> uniq file1.txt
+OUTPUT: show unique lines of file1.txt
+>> sort file1.txt | uniq
+OUTPUT: show unique lines of sorted file1.txt
+! what does | do?
+! it means pipe and it is used to pass output of one command to another command
+! For uniq the file should be sorted first
+>> md5sum file1.txt
+OUTPUT: show md5sum of file1.txt 
+! It helps to check if file is corrupted or not
+>> sha1sum file1.txt
+OUTPUT: show sha1sum of file1.txt
+! It helps to check if file is corrupted or not
+#####################################################
+#######################Grep##########################
+#####################################################
+>> grep "Khoobi" file1.txt
+OUTPUT: show lines that contain "Khoobi" in file1.txt
+>> grep -v "Khoobi" file1.txt
+OUTPUT: show lines that not contain "Khoobi" in file1.txt
+>> grep -E "^Salam" file1.txt
+OUTPUT: show lines that start with "Salam" in file1.txt
+>> grep -E -c "^Salam" workspace/test1.txt 
+OUTPUT: show number of lines that start with "Salam" in file1.txt
+>> cat workspace/passwd | grep -i kernel
+OUTPUT: show lines that contain "kernel" in workspace/passwd 
+! -i is for ignore case sensitivity
+>> grep -i kernel workspace/passwd 
+OUTPUT: show lines that contain "kernel" in workspace/passwd
+>> grep -E -R "^Salam" *
+OUTPUT: show lines that start with "Salam" in all files in current directory
+>> egrep -R "^Salam" *
+OUTPUT: show lines that start with "Salam" in all files in current directory
+>> egrep -d skip "^Salam" *
+OUTPUT: show lines that start with "Salam" in all files in current directory and skip directories
+>> egrep -d recurse "^Salam" *
+OUTPUT: show lines that start with "Salam" in all files in current directory and recurse directories
+###########################################################
+################redirection,Sed,Pipe#######################
+###########################################################
+>> wc -l *.txt
+OUTPUT: show number of lines in all .txt files in current directory
+>> wc -l *.txt | sort -n
+OUTPUT: show number of lines in all .txt files in current directory and sort them
+>> wc -l *.txt | sort -n | head -n5
+OUTPUT: show number of lines in all .txt files in current directory and sort them and show first 5 lines
+>> wc -l *.txt | sort -n | head -n5 | grep -v "names"
+OUTPUT: show number of lines in all .txt files in current directory and sort them and show first 5 lines and not contain "names"
+! redirect is done by > and <
+>> ls ali 2> ali.txt
+OUTPUT: redirect output error to ali.txt
+>> ls ali &> ali.txt
+OUTPUT: redirect output 1 (std output) and 2 (error output) to ali.txt
+>> ls ali &>> ali.txt
+OUTPUT: append redirect output to ali.txt
+>> cat < file1.txt > file2.txt
+OUTPUT: copy content of file1.txt to file2.txt
+##################################################
+####################Sed###########################
+##################################################
+>> echo "Setare Khosravi is student, Setare is 24" | sed 's/Setare/Alireza/'
+OUTPUT: replace the first "Setare" with "Alireza"
+>> echo "Setare Khosravi is student, Setare is 24" | sed 's/Setare/Alireza/g'
+OUTPUT: replace all "Setare" with "Alireza"
+>> echo "Setare Khosravi is student, Setare is 24, setare is here" | sed 's/Setare/Alireza/gi'
+OUTPUT: replace all "Setare" with "Alireza" and ignore case sensitivity
+>> echo "Setare Khosravi is student, Setare is 24, setare is here, setae is fine" | sed -r 's/Seta.?e/Alireza/gi'
+OUTPUT: replace all "Setare" with "Alireza" and ignore case sensitivity and match with regex
+>> echo "Setare Khosravi is student, Setare is 24, setare is here" | sed -e 's/Setare/Alireza/gi' -e 's/24/20/'
+OUTPUT: replace all "Setare" with "Alireza" and ignore case sensitivity and replace "24" with "20"
