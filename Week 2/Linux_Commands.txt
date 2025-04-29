@@ -1,0 +1,87 @@
+###########################################################
+########################Package manager####################
+###########################################################
+>> mv test.txt sample.txt
+OUTPUT: rename file test.txt to sample.txt
+>> split -d -l2 sample.txt sample_
+OUTPUT: split sample.txt into sample_00, sample_01, sample_02, sample_03 and ...
+>> ls sample_* | xargs rm -f
+OUTPUT: remove all files with name sample_00, sample_01, sample_02, sample_03 and ...
+>> ls sample_0? | xargs rm -f
+OUTPUT: remove all files with name sample_00, sample_01, sample_02, sample_03 and ...
+>> rm -f $(ls sample_1?)
+OUTPUT: remove all files with name sample_10, sample_11, sample_12, sample_13 and ...
+!It is Shell expansion
+>> cat /etc/os-release
+OUTPUT: show the information of the OS
+############################################################
+#########################dpkg###############################
+############################################################
+>> apt download vim
+OUTPUT: download vim package
+>> sudo apt remove vim
+OUTPUT: remove vim package
+>> sudo apt autoremove
+OUTPUT: remove all packages that are no longer required (vim dependencies)
+>> dpkg -c vim.deb
+OUTPUT: show the content of vim.deb
+>> dpkg --get-selections
+OUTPUT: show the list of installed packages
+>> dpkg -i vim.deb
+OUTPUT: install vim.deb
+>> sudo !!
+OUTPUT: run the last command as root
+>> dpkg -l
+OUTPUT: show the list of installed packages
+>> dpkg -l vim
+OUTPUT: show the information of vim package
+>> dpkg -L vim
+OUTPUT: show the list of files installed by vim package
+>> dpkg -l | grep vim
+OUTPUT: show the list of vim package
+>> sudo dpkg -P vim
+OUTPUT: remove vim package
+>> sudo dpkg -r vim
+OUTPUT: remove vim package
+>> sudo dpkg -i vim.deb
+OUTPUT: install vim
+>> sudo dpkg --configure vim
+OUTPUT: configure vim
+! dpkg is for manual installation you should handle dependencies manually
+############################################################
+##########################apt###############################
+############################################################
+! apt is for automatic installation, it has accsess to the repositories
+! and it handles dependencies automatically
+>> sudo dpkg -r vim
+OUTPUT: remove vim package
+>> dpkg -l | grep vim
+OUTPUT: show the list of vim package
+>> sudo apt update
+OUTPUT: update the list of available packages
+>> sudo apt-get update
+OUTPUT: update the list of available packages
+>> sudo apt upgrade
+OUTPUT: upgrade all packages to their latest version
+>> sudo apt search vim
+OUTPUT: search for vim package
+>> sudo apt search vim | less
+OUTPUT: search for vim package and show the result in less
+! Press /^vim to search for vim package
+>> sudo apt install vim
+OUTPUT: install vim package
+>> sudo apt remove vim vim-runtime
+OUTPUT: remove vim package
+>> sudo apt install vim
+OUTPUT: install vim package
+>> sudo apt autoclean
+OUTPUT: remove all packages that are no longer required, and remove packages database entries for them
+>> sudo apt-get check
+OUTPUT: check if there are any broken dependencies
+>> sudo apt-get dist-upgrade
+OUTPUT: upgrade all packages to their latest version
+>> sudo apt-get upgrade
+OUTPUT: upgrade all packages to their latest version
+>> sudo apt source vim
+OUTPUT: download the source code of vim package
+
