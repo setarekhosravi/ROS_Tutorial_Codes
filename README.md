@@ -60,7 +60,3 @@ The knowledge from this tutorial helps me to contribute to an aerial robotics pr
 ## 10. Additional Resources  
 - **Udemy Course:** ROS1 by Edouard Renard  
 - **TU Delft ROS1 Course:** Currently in progress  
-
----
-
-This README provides a structured overview of the ROS1 tutorial and its practical applications. Let me know if you'd like any modifications! 🚀
